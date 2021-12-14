@@ -7,6 +7,8 @@ score = 0
 while True:
     a = random.choice(data)
     b = random.choice(data)
+    if a == b:
+        b = random.choice(data)
     print(f"Compare A: {a['name']}, {a['description']}, from {a['country']}.")
     print(vs)
     print(f"Against B: {b['name']}, {b['description']}, from {b['country']}.")
